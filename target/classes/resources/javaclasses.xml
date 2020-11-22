@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+ <bean class="java.lang.String"  id="string" ></bean>
+ <bean class ="java.util.Scanner" id ="scanner"></bean>
+  <bean class ="java.util.Collections" id ="collections"></bean>
+  <bean class ="java.util.ArrayList" id ="arralist"></bean>
+  <bean class ="java.util.Arrays" id ="arrays"></bean>
+  <bean class ="java.lang.Exception" id ="exception"></bean>
+  <bean class ="java.util.Currency" id ="currency"></bean>
+  <bean class ="java.lang.Thread" id ="thread"></bean>
+  <bean class ="java.util.Calendar" id ="calendar"></bean>
+   <bean class ="java.sql.Date" id ="date"></bean>
+   <bean class ="java.io.FileReader" id ="filereader"></bean>
+   
+  
+ 
+</beans>
