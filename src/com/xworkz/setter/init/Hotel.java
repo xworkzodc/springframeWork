@@ -3,7 +3,7 @@ package com.xworkz.springinit;
 public class Hotel {
 	private String name;//init using const
 	private boolean type;//init using set
-	private String location;
+	private String location;//init using setter
 	
 	public Hotel() {
 		System.out.println(this.getClass().getSimpleName() + "created ");
@@ -14,19 +14,19 @@ public class Hotel {
 		//System.out.println("initializing using constructor");
 	}
 
-	public boolean isType() {
-		return type;
-	}
+	//public boolean isType() {
+	//	return type;
+	//}
 
 	public void setType(boolean type) {
 		this.type = type;
 		System.out.println("setType "+type);
 	}
 
-	public String getLocation() {
-		return location;
-	}
-
+	//public String getLocation() {
+	//	return location;
+	//}
+//
 	public void setLocation(String location) {
 		this.location = location;
 		System.out.println("setLocation "+location);
