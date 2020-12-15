@@ -46,7 +46,8 @@ public class VaccineDAO {
 
 		}
 	}
-	
+	//change return type to VaccineDTO
+	//missing try catch
 	public void fetchData(int vaccine_id) {
 		
 		Session session = null;
@@ -58,8 +59,7 @@ public class VaccineDAO {
 		System.out.println(vaccineDTO);
 		session.getTransaction().commit();
 		session.close();
-	}
-	
+	}//missing try catch
 	public void update(String vaccine_name, int vaccine_id) {
 		Session session= null;
 		Transaction tx = null;
@@ -69,6 +69,7 @@ public class VaccineDAO {
 		VaccineDTO vaccineDTO = session.get(VaccineDTO.class, vaccine_id);
 		if(vaccineDTO!=null) {
 			vaccineDTO.setVaccineId(1);
+			//update vaccine_name
 			vaccineDTO.setVaccine_name("covaxin");
 			session.update(vaccineDTO);
 		}
@@ -76,7 +77,7 @@ public class VaccineDAO {
 		session.close();
 
 	}
-	
+	//missing try catch
 	public void delete(int vaccine_id) {
 		Session session=factory.openSession();
 		Transaction tx = session.beginTransaction();
